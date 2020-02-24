@@ -247,7 +247,7 @@ section {
 
   .nav-container {
     right: 40px;
-    top: 4.7vh;
+    top: 7vh;
   }
 
   nav {
@@ -261,7 +261,7 @@ section {
   .frame {
     display: grid;
     grid-template-columns: auto 3vw 75vw 119px;
-    grid-template-rows: 4vh auto fit-content(100%);
+    grid-template-rows: 7vh auto fit-content(100%);
   }
 
   .main-header-container {
@@ -315,7 +315,7 @@ section {
 
   .nav-container {
     right: 10px;
-    top: 4.7vh;
+    top: 7vh;
   }
 }
 
