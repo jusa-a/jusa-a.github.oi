@@ -179,9 +179,8 @@ section {
   grid-row: 2 / 3;
   width: 100%;
   display: grid;
-  grid-template-columns: 34% auto 30% auto;
-  grid-template-rows: 27vh auto;
-  position: relative;
+  grid-template-columns: 37% auto auto;
+  grid-template-rows: 23% auto auto;
   z-index: -1;
 }
 
@@ -191,9 +190,18 @@ section {
 }
 
 .cv-image {
-  grid-column: 1 / 2;
+  width: 100%;
+  grid-column: 1;
   grid-row: 2;
   z-index: 1;
+}
+
+.cv-image img {
+  width: 100%;
+}
+
+.cv-svg{
+  width: 90%;
 }
 
 .contact-container {
