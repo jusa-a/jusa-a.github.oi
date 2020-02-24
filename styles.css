@@ -135,7 +135,7 @@ a.current, li.active a{
 .project-nav-container {
   position: fixed;
   right: calc(92vh + 11vh);
-  top: 18vw;
+  top: 20vh;
   text-align: right;
 }
 
@@ -145,14 +145,25 @@ a.current, li.active a{
   width: 100%;
 }
 
+.project-header {
+  padding-bottom: 30px;
+}
+
 .project-content {
   display: grid;
-  grid-template-rows: 50vw 100vw 30vw 60vw 50px;
+  grid-template-rows: auto 500px 800px 1700px 50px;
 }
 
 .project h2 {
-  text-align: right;
+  text-align: left;
   padding-right: 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.project .body {
+  text-align: left;
+  width: 60%;
 }
 
 section {
@@ -222,10 +233,6 @@ section {
 
 @media screen and (max-aspect-ratio: 15/13) {
 
-  body {
-    background: pink;
-  }
-
   h2 {
   font-size: 30px;
   }
@@ -246,7 +253,7 @@ section {
   .frame {
     display: grid;
     grid-template-columns: auto 3vw 75vw 119px;
-    grid-template-rows: 4vh auto fit-content();
+    grid-template-rows: 4vh auto fit-content(100%);
   }
 
   .main-header-container {
@@ -260,7 +267,6 @@ section {
     margin: 0;
     padding: 0;
     transform: rotate(0deg);
-    position: auto;
   }
 
   .side-header-container {
@@ -280,7 +286,6 @@ section {
   .project-nav-container {
     position: fixed;
     left: 5vw;
-    top: 18vw;
     text-align: right;
   }
 
@@ -307,9 +312,6 @@ section {
 }
 
 @media screen and (max-width: 640px) {
-  body {
-    background: lightgreen;
-  }
 
   h2 {
     font-size: 6vw;
@@ -326,25 +328,25 @@ section {
   .frame {
     display: grid;
     grid-template-columns: auto 5% 90% 5%;
-    grid-template-rows: auto auto fit-content();
+    grid-template-rows: 15vh auto fit-content(100%);
   }
 
   .nav-container {
-    right: -15vw;
+    right: -15.5vw;
     top: 12vh;
   }
 
   .project-nav-container {
     position: fixed;
-    left: -1vw;
-    top: 25vh;
+    left: -0.5vw;
+    top: 30vh;
   }
 
   .nav-container li {
     transform: rotate(-90deg);
     transform-origin: 0% 0%;
     text-align: center;
-    margin-bottom: 25vh;
+    margin-bottom: 20vh;
   }
 
   #hide {
@@ -364,7 +366,6 @@ section {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    position: auto;
     left: 4.9vw;
     bottom: auto
   }
@@ -373,16 +374,23 @@ section {
     margin: 0;
     transform: rotate(0);
     transform-origin: 0 100%;
-    position: auto;
     bottom: auto;
     padding-bottom: 0;
-    padding-top: 1.8vh;
+    padding-top: 3vh;
 
   }
 
   .intro {
     text-align: left;
     justify-self: start;
+  }
+
+  .project .body {
+    width: 100%;
+  }
+
+  .contact-content {
+    padding-top: 10vh;
   }
 
 }
