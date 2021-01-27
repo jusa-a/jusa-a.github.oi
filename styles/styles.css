@@ -5,6 +5,7 @@
 html {
     overflow-y: scroll;
     font-size: calc(9px + (26 - 9) * ((100vw - 300px) / (3000 - 300)));
+    line-height: 1.5rem;
 }
 
 .frame {
@@ -62,8 +63,9 @@ html {
     width: 100%;
     max-height: auto;
     opacity: 90%;
-    transition: 1s;
+    transition: 500ms;
     display: block;
+    filter: blur(5px);
 }
 
 .nav-container {
@@ -128,9 +130,14 @@ li.active a {
     text-decoration: none;
 }
 
+.projects {
+    text-align: center;
+    width: 95%;
+}
+
 .project {
-    padding-top: 2em;
-    padding-bottom: 7em;
+    padding-top: 1em;
+    padding-bottom: 9em;
 }
 
 .project-nav-container {
@@ -139,7 +146,7 @@ li.active a {
     top: 20vh;
     grid-column: 2 / 3;
     text-align: right;
-    padding-right: 0.5vw;
+    padding-right: 1em;
 }
 
 .projects-container {
@@ -149,25 +156,30 @@ li.active a {
 }
 
 .projects-main-header {
-    padding-bottom: 1.5em;
+    text-align: center;
+    padding-bottom: 3em;
 }
 
 .project-content {
-    width: 90%;
+    width: 85%;
+    margin: auto;
 }
 
 .project h2 {
-    text-align: left;
-    padding-top: 1.5em;
+    padding-top: 1em;
     padding-bottom: 0.5em;
 }
 
 .project img {
-    float: right;
+    //float: right;
     max-width: 55%;
     width: auto;
     height: auto;
-    margin: 0.5em;
+    //margin: 0 0 0 0.5em;
+}
+
+.project a {
+    text-decoration: underline;
 }
 
 section {
@@ -182,30 +194,10 @@ section {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     width: 100%;
-    display: grid;
-    grid-template-columns: 37% auto auto;
-    grid-template-rows: 23% auto auto;
-    z-index: -1;
-}
-
-.cv {
-    grid-column: 1 / 4;
-    grid-row: 1 / 3;
-}
-
-.cv-image {
-    width: 100%;
-    grid-column: 1;
-    grid-row: 2;
-    z-index: 1;
-}
-
-.cv-image img {
-    width: 100%;
 }
 
 .cv-svg {
-    width: 90%;
+    width: 100%;
 }
 
 .contact-container {
