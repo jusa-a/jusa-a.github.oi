@@ -1,74 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>portfolio_jusa</title>
-    <link rel="stylesheet" type="text/css" href="normalize.css" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:regular&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="script.js" type="text/javascript"></script>
-  </head>
-  <body>
-    <div class="frame">
 
-      <div class="nav-container">
-        <nav class="nav">
-          <ul style="list-style-type:none">
-            <li class="toggle"><a href="about.html">about</a></li>
-            <li class="toggle"><a class="current" href="work.html">work</a></li>
-            <li class="toggle"><a href="cv.html">cv</a></li>
-            <li class="toggle"><a href="contact.html">contact</a></li>
-          </ul>
-        </nav>
-      </div>
+<head>
+  <title>Jusa Annevrita</title>
+  <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:regular&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:regular&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="scripts/script.js" type="text/javascript"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN64KQDXKZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      <div class="side-header-container"  id="hide">
-        <div>
-          <h2 class="side-header">
-            <a class="current" href="index.html">jusa annevirta</a>
-          </h2>
-        </div>
-      </div>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-DN64KQDXKZ');
+  </script>
+</head>
 
-      <div class="project-nav-container">
-        <nav class="nav" id="project-nav">
-          <ul style="list-style-type:none">
-            <li class="toggle"><a href="#p1">#1</a></li>
-            <li class="toggle"><a href="#p2">#2</a></li>
-            <li class="toggle"><a href="#p3">#3</a></li>
-            <li class="toggle"><a href="#p4">#4</a></li>
-          </ul>
-        </nav>
-      </div>
+<body>
+  <div class="frame">
 
-      <div class="project-container">
-        <div class="project-header">
-          <h2>here are some things i've done</h2>
-        </div>
-        <div class="project-content">
-          <section class="project" id="p1">
-            <h2>project1</h2>
-            <p class="body">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Risus viverra adipiscing at in. Sagittis id consectetur purus ut faucibus pulvinar.
-              Volutpat odio facilisis mauris sit. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam.<br /><br />
-              Et odio pellentesque diam volutpat. Eget est lorem ipsum dolor sit amet. Nunc vel risus commodo viverra. Consequat interdum varius sit amet. Gravida cum sociis natoque penatibus et magnis. Morbi tempus iaculis urna id volutpat. Vel elit scelerisque mauris pellentesque. Eu augue ut lectus arcu bibendum at varius vel. In fermentum et sollicitudin ac. Enim blandit volutpat maecenas volutpat blandit aliquam etiam. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at.
-            </p>
-          </section>
-          <section class="project" id="p2">
-            <h2>project2</h2>
-          </section>
-          <section class="project" id="p3">
-            <h2>project3</h2>
-          </section>
-          <section class="project" id="p4">
-            <h2>project4</h2>
-          </section>
-        </div>
-      </div>
-
+    <div class="project-nav-container">
+      <nav class="nav" id="project-nav">
+        <ul style="list-style-type:none">
+          <li class="toggle"><a href="#p1">#1</a></li>
+          <li class="toggle"><a href="#p2">#2</a></li>
+          <li class="toggle"><a href="#p3">#3</a></li>
+          <li class="toggle"><a href="#p4">#4</a></li>
+        </ul>
+      </nav>
     </div>
-  </body>
+    <div class="projects-container">
+      <div class="projects-main-header">
+        <h2>here are some things i've done</h2>
+      </div>
+      <div class="projects">
+        <section class="project" id="p1">
+          <h2>my portfolio</h2>
+          <div class="project-content">
+            <p>
+              This is my portfolio. I have created it to gather information about me and my
+              projects to one place.
+              <br><br>
+              The page is built with minimal set of languages.
+              I wanted to stretch my abilities and develop my skills
+              with no frameworks using only HTML, CSS, & a pinch of JQuery.
+              Everything is designed and built from scratch by me.
+              <br><br>
+              I have designed the user interface to be modern and minimalistic (even brutalistic), yet informative.
+              <br><br>
+              <a class="current" href="https://github.com/jusa-a/jusa-a.github.io">source code and more info</a>
+            </p>
+          </div>
+        </section>
+        <section class="project" id="p2">
+          <h2>self-monitoring application</h2>
+          <div class="project-content">
+            <p>
+              Self-monitoring web application for reporting daily behavior. The application provides functionality for
+              summarization of reported data. Each user can view statistics of their reports on a weekly and monthly
+              level.
+              <br><br>
+              I created this application as a project for a Web software development -course.
+              <br><br>
+              <img src="images/selfmonitoringapp-home.png" alt="application landing page">
+              <br><br>
+              <a class="current" href="https://self-monitoring--app.herokuapp.com/">application running on Heroku</a>
+              <br><br>
+              <a class="current" href="https://github.com/jusa-a/self-monitoring-app">source code and more info</a>
+            </p>
+          </div>
+        </section>
+        <section class="project" id="p3">
+          <h2>craft beer from surplus bread</h2>
+          <div class="project-content">
+            <p>
+              The project started on a university course called Creating Value with a goal of creating value to
+              company/companies and customers with sustainability and circulation economy as the main theme of our team.
+              <br><br>
+              <img src="images/surplus-beer-brewing.jpg" alt="beer brewing">
+              <br><br>
+              In collaboration with brewery Olarin panimo and grocery store K-Market Otaniemi we developed and crafted a
+              beer made with surplus bread. The beer is now in continuous production and is available at dozens of Kesko
+              stores.
+              <br><br>
+              This project attained a good amount of media attention and was reported by Helsingin Sanomat and Pirkka
+              Magazine among other news and media. Our project won the 'Deed of the Year' award at the Kesko merchant
+              awards. Leipäle beer was also served at the Independence Day Reception held at the Presidential palace in
+              2019.
+              <br><br>
+              The project developed skills in product development, cooperation with partners and team, design thinking,
+              effectuation and customer development.
+              <br><br>
+              <a class="current" href="https://www.pirkka.fi/artikkeli/olutta-havikkileivasta">more about the
+                project</a>
+              <br><br>
+              <a class="current" href="https://www.hs.fi/kaupunki/espoo/art-2000006106294.html">more about the
+                project</a>
+            </p>
+          </div>
+        </section>
+        <section class="project" id="p4">
+          <h2>music player ui prototypes</h2>
+          <div class="project-content">
+            <p>
+              Music player UI tailored for jogging. Interaction design for a mobile setting using a web-based
+              prototyping tool Marvel. Developed as an assignment for a course about human computer
+              interaction.
+              <br><br>
+              A 3-level music selector that lets the user select an artist, an album, and a song to be player.
+              Two alternative UI prototypes: three horizontally swipable screens & a single screen that presents the
+              three levels using accordions.
+              <br><br>
+              <a class="current" href="https://marvelapp.com/prototype/200h950g/screen/63990872">
+                UI prototypes on Marvel
+              </a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="nav-container">
+      <nav class="nav">
+        <ul style="list-style-type:none">
+          <li class="toggle"><a href="index.html#about">about</a></li>
+          <li class="toggle"><a class="current" href="work.html">work</a></li>
+          <li class="toggle"><a href="cv.html">cv</a></li>
+          <li class="toggle"><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="side-header-container" id="hide">
+      <h2 class="side-header">
+        <a class="current" href="index.html">jusa annevirta</a>
+      </h2>
+    </div>
+
+  </div>
+</body>
+
 </html>
