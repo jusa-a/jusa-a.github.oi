@@ -27,7 +27,7 @@ html {
 
 .main-header {
     white-space: nowrap;
-    padding-left: 0.5vw;
+    padding-left: 0.7vw;
 }
 
 .intro {
@@ -59,13 +59,19 @@ html {
     top: 4.7vh;
 }
 
+.main-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 .main-image {
     width: 100%;
     max-height: auto;
     opacity: 90%;
-    transition: 500ms;
-    display: block;
-    filter: blur(5px);
+    transition: filter 500ms;
+    filter: blur(10%);
 }
 
 .nav-container {
