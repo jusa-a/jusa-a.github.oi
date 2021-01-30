@@ -320,7 +320,6 @@ section {
 
     .project-nav-container {
         top: 0vh;
-        padding-left: 1rem;
         direction: ltr;
         height: 100vh;
         overflow-y: scroll;
