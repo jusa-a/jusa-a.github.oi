@@ -10,19 +10,19 @@ html {
 
 .frame {
     display: grid;
-    grid-template-columns: auto 17vw minmax(auto, 90vh) 9vw;
-    grid-template-rows: 4.7vh auto auto 4.7vh;
+    grid-template-columns: auto 17vw minmax(auto, 90vh) 10vw;
+    grid-template-rows: 5vh auto auto 5vh;
 }
 
 .index {
-    grid-template-rows: 4.7vh minmax(auto, 90vh) auto 4.7vh;
+    grid-template-rows: 5vh minmax(auto, 90vh) auto 5vh;
 }
 
 .main-header-container {
     grid-column: 2 / 3;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 4.7vh;
+    top: 5vh;
     justify-self: end;
     align-self: end;
     writing-mode: tb-rl;
@@ -59,7 +59,7 @@ html {
     z-index: -1;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 4.7vh;
+    top: 5vh;
 }
 
 .main-image-wrapper {
@@ -81,7 +81,7 @@ html {
     grid-column: 4 / 5;
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 4.7vh;
+    top: 5vh;
     padding-left: 0.5rem;
 }
 
@@ -117,6 +117,12 @@ p,
     margin: 0;
 }
 
+p a,
+p a:visited {
+    text-decoration: underline;
+    color: #1eaedb;
+}
+
 a,
 a:visited {
     text-decoration: line-through;
@@ -141,7 +147,7 @@ li.active a {
     top: 20vh;
     grid-column: 2 / 3;
     text-align: right;
-    padding-right: 1.5em;
+    padding-right: 1em;
     direction: rtl;
     white-space: nowrap;
 }
@@ -201,9 +207,10 @@ li.active a {
     height: auto;
 }
 
-.project a {
+.project a,
+.project a:visited {
     font-family: "Roboto", sans-serif;
-    color: #565050;
+    color: #1eaedb;
     text-decoration: underline;
 }
 
@@ -272,51 +279,50 @@ section {
     padding-right: 0.7em;
 }
 
-@media screen and (max-aspect-ratio: 15/13) {
+@media screen and (max-aspect-ratio: 16/13) {
     .frame {
-        grid-template-columns: auto 17vw minmax(auto, 80vh) 9vw;
+        grid-template-columns: auto 17vw minmax(auto, 80vh) 10vw;
     }
 
-    .project-nav-container {
-        padding-right: 1rem;
-    }
-
-    .main-header-container {
-        align-self: start;
-    }
-
-    .intro {
-        width: 60%;
-        grid-column: 3 / 4;
-        justify-self: end;
-        padding: 0;
+    .index {
+        grid-template-rows: 5vh minmax(auto, 80vh) auto 15vh;
     }
 }
 
-@media screen and (max-aspect-ratio: 14/15), (max-width: 800px) {
+@media screen and (max-aspect-ratio: 15/14) {
     .frame {
-        grid-template-columns: auto 7vw auto 9vw;
+        grid-template-columns: auto 17vw minmax(auto, 70vh) 10vw;
     }
 
-    .main-header-container {
-        align-self: start;
+    .index {
+        grid-template-rows: 5vh minmax(auto, 70vh) auto 25vh;
+    }
+}
+
+@media screen and (max-aspect-ratio: 15/16), (max-width: 800px) {
+    .frame {
+        grid-template-columns: auto 5vw minmax(auto, 60vh) 10vw;
+    }
+
+    .index {
+        grid-template-rows: 5vh minmax(auto, 60vh) auto 10vh;
     }
 
     .intro {
-        width: 60%;
+        max-width: 50%;
+        margin-top: 120%;
         grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        justify-self: end;
         padding: 0;
+        margin-bottom: 0;
     }
 
     .project-nav-container {
-        padding-left: 2vw;
-        padding-top: 10vh;
+        top: 0vh;
+        padding-left: 1rem;
         direction: ltr;
-        position: fixed;
-        overflow-y: scroll;
-        top: 0;
-        bottom: 0;
-        left: 0;
+        height: 100vh;
         overflow-y: scroll;
         scrollbar-width: none; /* Firefox */
         -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -329,13 +335,15 @@ section {
 
     #project-nav {
         padding-right: 1rem;
+        margin-top: 16vh;
+        margin-bottom: 5vh;
     }
 
     .project-nav-container li {
         writing-mode: tb-rl;
         transform: rotate(-180deg);
         text-align: center;
-        margin-bottom: 5vh;
+        margin-top: 5vh;
     }
 }
 
@@ -361,17 +369,15 @@ section {
 
 @media screen and (max-width: 640px) {
     .frame {
-        display: grid;
-        grid-template-columns: auto 7% 87% 6%;
-        grid-template-rows: 15vh auto auto 4.7vh;
+        grid-template-columns: auto 7vw 87vw 6vw;
     }
 
     .index {
-        grid-template-rows: 15vh auto auto 4.7vh;
+        grid-template-rows: 25vh 87vw auto 5vh;
     }
 
     .main-header-container {
-        margin-top: 10vh;
+        margin-top: 30vh;
         top: 15vh;
     }
 
@@ -382,7 +388,6 @@ section {
 
     .nav-container {
         top: 15vh;
-        padding-left: 1vw;
     }
 
     .nav-container li {
@@ -393,9 +398,7 @@ section {
     }
 
     .intro {
-        width: 70%;
-        text-align: left;
-        justify-self: flex-start;
+        max-width: 80%;
     }
 
     #hide {
@@ -403,7 +406,6 @@ section {
     }
 
     .project-nav-container {
-        padding-top: 15vh;
         direction: ltr;
     }
 
