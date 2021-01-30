@@ -45,6 +45,3 @@ function onScroll(event) {
         }
     });
 }
-
-//resource:
-//https://stackoverflow.com/questions/9979827/change-active-menu-item-on-page-scroll
