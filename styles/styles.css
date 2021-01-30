@@ -74,7 +74,7 @@ html {
     max-height: auto;
     opacity: 90%;
     transition: filter 500ms;
-    filter: blur(10%);
+    filter: blur(10px);
 }
 
 .nav-container {

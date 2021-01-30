@@ -2,11 +2,11 @@ $(window).scroll(function () {
     if ($("#about").position().top <= $(document).scrollTop() + 100) {
         $(".main-header a").addClass("current");
         $(".about a").addClass("current");
-        $(".main-image").css("filter", "blur(0.1px)");
+        $(".main-image").css("filter", "blur(0px)");
     } else {
         $(".main-header a").removeClass("current");
         $(".about a").removeClass("current");
-        $(".main-image").css("filter", "blur(5px)");
+        $(".main-image").css("filter", "blur(10px)");
     }
 });
 
