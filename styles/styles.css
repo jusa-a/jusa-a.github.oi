@@ -368,7 +368,8 @@ section {
 
 @media screen and (max-width: 640px) {
     .frame {
-        grid-template-columns: auto 6vw 88vw 6vw;
+        grid-template-columns: auto 7vw 87vw 6vw;
+        grid-template-rows: 15vh auto auto 5vh;
     }
 
     .index {
@@ -406,6 +407,7 @@ section {
     }
 
     .project-nav-container {
+        padding-left: 1vw;
         direction: ltr;
     }
 
