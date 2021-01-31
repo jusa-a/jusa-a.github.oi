@@ -315,6 +315,7 @@ section {
 
     .intro {
         max-width: 50%;
+        height: 24vh;
         margin-top: 120%;
         grid-column: 3 / 4;
         grid-row: 3 / 4;
@@ -348,6 +349,16 @@ section {
         transform: rotate(-180deg);
         text-align: center;
         margin-top: 5vh;
+    }
+}
+
+@media screen and (max-aspect-ratio: 10/14) {
+    .frame {
+        grid-template-columns: auto 6vw minmax(auto, 50vh) 10vw;
+    }
+
+    .index {
+        grid-template-rows: 5vh minmax(auto, 50vh) auto 20vh;
     }
 }
 
@@ -405,6 +416,7 @@ section {
 
     .intro {
         max-width: 80%;
+        height: 35vh;
     }
 
     #hide {
